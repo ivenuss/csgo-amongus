@@ -22,7 +22,7 @@ void ColorMenu(int client)
 
 		Format(buffer, sizeof(buffer), "%s%s%s", szColor, (g_iClientColor[client] == i) ? " [YOURS]":"", szTaken);
 
-		menu.AddItem(szNum, buffer); 
+		menu.AddItem(szNum, buffer, (g_iClientColor[client] == i || strlen(szTaken) > 0) ? ITEMDRAW_DISABLED:ITEMDRAW_DEFAULT );
 
 	}
 	

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "overlay/amongus_alermo/map_crewmate1"
+	"$translucent" 1
+	"$decal" 1
+}

@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/custom/spacesuit/Spacesuit_Glove_D"
+	"$bumpmap" "models/player/custom/spacesuit/Spacesuit_Glove_N"
+	
+	"$surfaceprop" "flesh"
+
+	
+// -- From here down is new stuff which will only be applied if $phong is set to 1 --
+    $phong 1
+    $phongexponent 7
+    $phongboost 1
+    $phongtint "[ .75 .75 .75 ]"
+    $halflambert 1    
+    $phongfresnelranges "[.4 .8 20]"
+	"$rimlight" "1"
+	"$rimlightboost" "1"
+}

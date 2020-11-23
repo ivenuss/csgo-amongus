@@ -34,6 +34,39 @@ void LoadLevels()
 	}
 }
 
+void LoadMapCvars()
+{
+	ServerCommand("mp_ct_default_primary \'\'");
+	ServerCommand("mp_ct_default_secondary \'\'");
+	ServerCommand("sm_cvar sv_footsteps 0");
+	ServerCommand("sv_min_jump_landing_sound 99999");
+	ServerCommand("mp_ignore_round_win_conditions 1");
+}
+
+void LoadModels()
+{
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_body_d.vmt");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_body_d.vtf");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_body_n.vtf");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_glove_d.vmt");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_glove_d.vtf");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_glove_n.vtf");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_helmet_d.vmt");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_helmet_d.vtf");
+	AddFileToDownloadsTable("materials/models/player/au/spacesuit_helmet_n.vtf");
+
+	AddFileToDownloadsTable("models/player/custom_player/au/spacesuit.dx90.vtx");
+	AddFileToDownloadsTable("models/player/custom_player/au/spacesuit.mdl");
+	AddFileToDownloadsTable("models/player/custom_player/au/spacesuit.phy");
+	AddFileToDownloadsTable("models/player/custom_player/au/spacesuit.vvd");
+	AddFileToDownloadsTable("models/player/custom_player/au/spacesuit_arms.dx90.vtx");
+	AddFileToDownloadsTable("models/player/custom_player/au/spacesuit_arms.mdl");
+	AddFileToDownloadsTable("models/player/custom_player/au/spacesuit_arms.vvd");
+
+	PrecacheModel("models/player/custom_player/au/spacesuit.mdl");
+}
+
+
 void PerformColor(int client, int color)
 {
 	int r, g, b; 
